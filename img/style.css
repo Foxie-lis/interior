@@ -1,0 +1,228 @@
+﻿/*main styles*/
+@font-face {
+    font-family: Montserrat, sans-serif; 
+    src: url(fonts/Montserrat-Regular.ttf); 
+}
+body {
+    font-family: Montserrat, sans-serif; 
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+.container-inner {
+    width: 1171px;
+    margin: 0 auto;
+}
+.content {
+    margin-top: 123px;
+}
+.arrow {
+    width: 9px;
+    height: 12px;
+    background-image: url('img/arrow.svg');
+    margin-left: 12px;
+}
+/*header*/
+.slider-menu {
+    width: 1102px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.logo {
+    width: 185px;
+    height: 22px;
+    background: url(img/logo.png);
+}
+header {
+    display: flex;
+}
+.top-menu {
+    display: inline-flex;
+}
+.top-menu-item a {
+    height: 10px;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    padding: 15px;
+    padding-bottom:8px;
+}
+.top-menu-item a:hover {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 2px solid black;
+}
+.slider {
+    background: url('img/slider-img.jpg');
+    width: 1366px;
+    height: 801px;
+}
+ .search > img {
+    margin-top: 10px;
+}
+/*slider-banner-content*/
+.slider-content {
+    margin-top: 275px;
+}
+.trending {
+    font-size: 18px;
+    height: 13px;
+    text-transform: uppercase;
+    color: #43a047;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+.banner-name {
+    margin-top: 22px;
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.banner-description {
+    margin-top: 28px;
+    width: 458px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 3.6px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    margin-top: 28px;
+}
+.arrow-hidden {
+    display: none;
+}
+.button:hover > .arrow-hidden {
+    display: flex;
+    margin-left: 22px;
+}
+.slider-paginator {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 137px;
+}
+.paginator {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: #c7c7c7;
+    border-radius: 50%;
+    margin: 5px;
+}
+.active {
+    width: 40px;
+    height: 40px;
+    background: black;
+}
+/*featured block*/
+.featured {
+    height: 612px;
+}
+.featured-head {
+    display: flex;
+    justify-content: space-between;
+}
+.tabs {
+    display: flex;
+    width: 295px;
+    border-bottom: 1px solid #6c6c6c;
+}
+.featured-name {
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+}
+.featured-name:hover, .head-active {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 3px solid #212121;
+}
+.featured-head > a {
+    display: flex;
+    align-items: center;
+}
+/*image-gallery*/
+.image-gallery {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.image-gallery-item {
+    width: 270px;
+    height: 270px;
+}
+.image-hovered {
+    display: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #a1a1a2;
+}
+.arrow-rounded {
+    background: #fff url('img/arrow-big.png') no-repeat 50% 50%;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.image-hovered-name {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+}
+.image-hovered-desc {
+    width: 204px;
+    margin-top: 20px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21.91px;
+}
+.image-gallery-item:hover > .image-hovered {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
